@@ -21,7 +21,7 @@ spec:
       source:
         repoURL: 'https://github.com/{{ $.Values.githubOrg | default $.Release.Name }}/{{ . }}'
         targetRevision: {{ "{{" }}path{{ "}}"
-        path: '{{`{{path}}`}}'
+        path: './'
         ## Rendered manifests.
         #targetRevision: '{{`{{path}}`}}'
         # path: './'
